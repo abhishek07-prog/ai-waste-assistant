@@ -1,0 +1,62 @@
+{
+  "battery": {
+    "label": "Battery",
+    "stream": "Special care waste (hazardous)",
+    "tip": "Never put batteries in the wet or dry bin. Keep them separate and hand them over at a battery / e-waste collection point."
+  },
+  "biological": {
+    "label": "Food / organic waste",
+    "stream": "Wet waste",
+    "tip": "Kitchen scraps, peels and leftovers. Compost at home if you can, otherwise give it to the wet-waste collection."
+  },
+  "brown-glass": {
+    "label": "Brown glass",
+    "stream": "Dry waste (recyclable)",
+    "tip": "Empty and rinse it. Wrap broken pieces in paper and label them so handlers are not hurt."
+  },
+  "cardboard": {
+    "label": "Cardboard",
+    "stream": "Dry waste (recyclable)",
+    "tip": "Flatten it and keep it dry. Wet or greasy cardboard cannot be recycled well."
+  },
+  "clothes": {
+    "label": "Clothes / textiles",
+    "stream": "Dry waste",
+    "tip": "If still wearable, donate or reuse it. Otherwise give it to the dry-waste collection."
+  },
+  "green-glass": {
+    "label": "Green glass",
+    "stream": "Dry waste (recyclable)",
+    "tip": "Empty and rinse it. Wrap broken pieces in paper and label them so handlers are not hurt."
+  },
+  "metal": {
+    "label": "Metal (cans, tins, lids)",
+    "stream": "Dry waste (recyclable)",
+    "tip": "Empty and rinse food cans and keep them with the dry recyclables."
+  },
+  "paper": {
+    "label": "Paper",
+    "stream": "Dry waste (recyclable)",
+    "tip": "Keep it clean and dry. Food-soiled or greasy paper cannot be recycled."
+  },
+  "plastic": {
+    "label": "Plastic",
+    "stream": "Dry waste (recyclable)",
+    "tip": "Empty and rinse it, then keep it clean and dry with the other dry recyclables. Never burn plastic."
+  },
+  "shoes": {
+    "label": "Shoes / footwear",
+    "stream": "Dry waste",
+    "tip": "If still usable, donate them. Otherwise put them in the dry-waste bin."
+  },
+  "trash": {
+    "label": "Non-recyclable item",
+    "stream": "Dry waste (non-recyclable)",
+    "tip": "This cannot be recycled, so it goes in the dry-waste bin. Sanitary items such as diapers or pads belong in the separate sanitary-waste stream."
+  },
+  "white-glass": {
+    "label": "Clear glass",
+    "stream": "Dry waste (recyclable)",
+    "tip": "Empty and rinse it. Wrap broken pieces in paper and label them so handlers are not hurt."
+  }
+}
