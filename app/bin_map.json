@@ -50,9 +50,9 @@
     "tip": "If still usable, donate them. Otherwise put them in the dry-waste bin."
   },
   "trash": {
-    "label": "Non-recyclable item",
+    "label": "Non-recyclable item (e.g. used mask)",
     "stream": "Dry waste (non-recyclable)",
-    "tip": "This cannot be recycled, so it goes in the dry-waste bin. Sanitary items such as diapers or pads belong in the separate sanitary-waste stream."
+    "tip": "This cannot be recycled. Wrap it and keep it out of the recyclables. Used masks and sanitary items may belong in the separate sanitary-waste stream, so check your local guidance."
   },
   "white-glass": {
     "label": "Clear glass",
