@@ -15,7 +15,7 @@ BINS_PATH = APP_DIR / "bin_map.json"
 CM_PATH = ROOT / "assets" / "confusion_matrix.png"
 IMG_SIZE = 224
 
-st.set_page_config(page_title="AI Waste Assistant", page_icon="♻️")
+st.set_page_config(page_title="AI Waste Assistant", page_icon=":material/recycling:")
 
 st.markdown("""
 <style>
@@ -29,7 +29,7 @@ st.markdown("""
 .pill {display:inline-block; padding:.15rem .75rem; border-radius:999px; color:#fff;
        background:var(--c); font-weight:600; font-size:.85rem; margin:.3rem 0;}
 </style>
-<div class="hero"><div class="t">♻️ AI Waste Identification Assistant</div>
+<div class="hero"><div class="t"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" height="34" width="34" fill="white"><path d="M9.2,9.2l2.22-3.68L9.95,3.07q-0.3-0.5-0.86-0.5T8.23,3.07L5.78,7.15L9.2,9.2ZM18.88,16l-2.22-3.7l3.47-2l1.6,2.68q0.27,0.42 0.3,0.95T21.8,14.9q-0.25,0.5-0.74,0.8T20,16H18.88ZM16,23l-4-4l4-4v2h4.75L19.3,19.9q-0.27,0.5-0.75,0.8T17.5,21H16v2ZM6.33,21q-0.5,0-0.91-0.26T4.8,20.05q-0.2-0.4-0.19-0.84q0.01-0.44 0.24-0.81L5.7,17H10v4H6.33ZM3.85,18.15L2.23,14.9Q2,14.45 2.01,13.94T2.3,12.98L2.7,12.3L1,11.27L6.48,9.9l1.38,5.5L6.13,14.35l-2.28,3.8ZM17.35,9.6L11.88,8.23L13.6,7.2L10.48,2H14q0.53,0 0.99,0.26t0.74,0.71l1.3,2.18l1.7-1.05L17.35,9.6Z"/></svg> AI Waste Identification Assistant</div>
 <div class="s">Show it one waste item. It tells you what it is and which bin it belongs in.</div></div>
 """, unsafe_allow_html=True)
 
@@ -75,7 +75,9 @@ threshold = st.sidebar.slider(
     help="Below this confidence the app says it is not sure instead of guessing.")
 st.sidebar.caption("Model: MobileNetV2 (transfer learning), 12 waste classes.")
 
-tab_id, tab_perf, tab_about = st.tabs(["🔍 Identify", "📊 How well does it work?", "ℹ️ About"])
+tab_id, tab_perf, tab_about = st.tabs([":material/search: Identify",
+     ":material/bar_chart: How well does it work?",
+     ":material/info: About"])
 
 with tab_id:
     mode = st.radio("Input", ["Upload a photo", "Use camera"], horizontal=True,
@@ -107,7 +109,8 @@ with tab_id:
             st.markdown(
                 f"<div class='result' style='--c:{c}'><div class='n'>{info['label']}</div>"
                 f"<span class='pill' style='--c:{c}'>{info['stream']}</span>"
-                f"<div>{info['tip']}</div></div>", unsafe_allow_html=True)
+                f"<div>{info['tip']}</div></div>", unsafe_allow_html=True
+            )
             st.caption(f"Confidence: {conf:.0%}")
 
         with st.expander("Top 3 predictions", expanded=conf < threshold):
@@ -136,9 +139,10 @@ with tab_about:
              "4. The best class is mapped to a bin and a disposal tip.  5. If confidence is low, "
              "the app says it is not sure.")
     st.subheader("Bin streams")
-    st.markdown("- 🟢 **Wet waste**: food and kitchen waste\n- 🔵 **Dry waste**: paper, plastic, metal, glass, textiles\n"
-                "- 🔴 **Special care**: batteries and hazardous items\n"
-                "- Sanitary waste is not covered by the classifier.")
+    st.markdown(":green[●] **Wet waste**: food and kitchen waste\n\n"
+                ":blue[●] **Dry waste**: paper, plastic, metal, glass, textiles\n\n"
+                ":red[●] **Special care**: batteries and hazardous items\n\n"
+                "Sanitary waste is not covered by the classifier.")
     st.subheader("Credits")
     st.write("Dataset: Garbage Classification (12 classes), enhanced version with corrected labels "
              "(original by Mostafa Mohamed, Kaggle). Bin streams follow India's Solid Waste Management Rules, 2026.")
