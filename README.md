@@ -111,7 +111,6 @@ requirements.txt
 - Collect our own phone photos for the weak spots (blank paper, steel items, plastic bags, clear glass, small batteries) and add them to training.
 - Reduce the dominance of the `clothes` class and fine-tune the top layers of MobileNetV2.
 - Keep a separate held-out set of our own photos so before/after improvements can be measured fairly.
-- Verify the class-to-bin mapping against the official text of the SWM Rules, 2026.
 
 ## Acknowledgements
 

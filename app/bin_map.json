@@ -52,7 +52,7 @@
   "trash": {
     "label": "Non-recyclable item (e.g. used mask)",
     "stream": "Dry waste (non-recyclable)",
-    "tip": "This cannot be recycled. Wrap it and keep it out of the recyclables. Used masks and sanitary items may belong in the separate sanitary-waste stream, so check your local guidance."
+    "tip": "Keep non-recyclable household waste separate from recyclables and follow local collection instructions. Used diapers, sanitary pads, tampons and similar sanitary products must go into the separate sanitary-waste stream. Healthcare-generated biomedical waste requires separate handling."
   },
   "white-glass": {
     "label": "Clear glass",

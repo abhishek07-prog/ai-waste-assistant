@@ -140,9 +140,10 @@ with tab_about:
              "the app says it is not sure.")
     st.subheader("Bin streams")
     st.markdown(":green[●] **Wet waste**: food and kitchen waste\n\n"
-                ":blue[●] **Dry waste**: paper, plastic, metal, glass, textiles\n\n"
-                ":red[●] **Special care**: batteries and hazardous items\n\n"
-                "Sanitary waste is not covered by the classifier.")
+            ":blue[●] **Dry waste**: paper, plastic, metal, glass, textiles\n\n"
+            ":red[●] **Special care**: batteries and hazardous items\n\n"
+            ":violet[●] **Sanitary waste**: diapers, pads and similar items "
+            "(not detected by the classifier)")
     st.subheader("Credits")
     st.write("Dataset: Garbage Classification (12 classes), enhanced version with corrected labels "
              "(original by Mostafa Mohamed, Kaggle). Bin streams follow India's Solid Waste Management Rules, 2026.")
